@@ -1,0 +1,55 @@
+@media screen and (min-width: 992px) {
+	.header-wrapper.navbar-light .navbar-nav .nav-link {
+    	padding: 30px 8px;
+	}
+	.header-wrapper.navbar {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.certificate-img {
+		height: 280px;
+	}
+}
+
+@media screen and (max-width: 1170px) {
+	.number-box p {
+	    font-size: 18px;
+	    line-height: 28px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.info-wrap {
+	    margin-top: 0;
+	    background-color: #42a85a;
+	}
+	.footer {
+	    padding: 98px 0;
+	    margin-top: 0;
+	}
+	.info-wrap .container {
+	    padding: 50px 15px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.slider-wrapper .carousel-caption h1 {
+		font-size: 18px;
+	}
+	.hero-wrapper {
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.left-info a {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.header-wrapper .navbar-brand {
+		width: 200px;
+	}
+}
