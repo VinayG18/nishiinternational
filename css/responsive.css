@@ -27,20 +27,38 @@
 	    background-color: #42a85a;
 	}
 	.footer {
-	    padding: 98px 0;
+	    padding: 50px 0;
 	    margin-top: 0;
 	}
 	.info-wrap .container {
 	    padding: 50px 15px;
 	}
+	.info-right li a {
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 45px;
+	}
+	.left-product-col {
+		height: 400px;
+	}
 }
 
 @media screen and (max-width: 575px) {
-	.slider-wrapper .carousel-caption h1 {
-		font-size: 18px;
-	}
 	.hero-wrapper {
 		height: 250px;
+	}
+	.slider-wrapper {
+		height: auto;
+	}
+	.slider-wrapper ul li {
+		width: 33.33%;
+		height: 200px;
+		box-shadow: none;
+	}
+	.img-title a {
+		padding: 5px;
+		font-size: 14px;
 	}
 }
 
@@ -51,5 +69,8 @@
 	}
 	.header-wrapper .navbar-brand {
 		width: 200px;
+	}
+	.slider-wrapper ul li {
+		height: 150px;
 	}
 }

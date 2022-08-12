@@ -89,14 +89,70 @@ a {
 }
 
 /*Slider*/
-.slider-wrapper .carousel-caption h1 {
-	background-color: rgba(66, 168, 90, 0.7);
+.slider-wrapper {
+	overflow: hidden;
+    height: 500px;
+    position: relative;
 }
-.slider-wrapper .carousel-caption p {
-	font-size: 20px;
-	line-height: 30px;
-	color: #000;
-	background-color: rgba(255, 255, 255, 0.7);
+
+.slider-wrapper ul {
+	width: 100%;
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+}
+
+.slider-wrapper ul li {
+	width: 20%;
+	height: 100%;
+	position: relative;
+	display: block;
+	float: left;
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.slider-wrapper ul:hover li {
+	width: 10%;
+}
+
+.slider-wrapper ul li:hover {
+	width: 60%;
+}
+
+.slider-wrapper ul li img {
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.img-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(66, 168, 90, 0.7);
+}
+
+.img-title a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	transition: all 0.5s ease;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.img-title a:hover {
+	color: #f6cc2a;
 }
 
 /*Points*/
@@ -128,6 +184,9 @@ a {
 }
 
 /*About*/
+.about-wrapper.home-about {
+	background-color: #fff;
+}
 .about-wrapper {
 	background-color: rgba(66, 168, 90, 0.1);
 }
@@ -205,6 +264,7 @@ a {
     color: #fff;
     font-size: 16px;
     line-height: 26px;
+	height: calc(100% - 30px);
 }
 .security-icon {
    	background-color: #fff;
@@ -223,7 +283,6 @@ a {
 }
 
 /*Product*/
-
 .product-wrapper {
     background-color: rgba(66, 168, 90, 0.1);
 }
@@ -269,20 +328,19 @@ a {
 	color: #000;	
 	transition: all 0.5s ease;
 }
-.product-price,
-.single-product-price {
+.product-price {
 	font-size: 18px;
 	line-height: 28px;
 	color: #000;
 }
-.product-price s,
-.single-product-price s { 
+.product-price s { 
 	font-size: 14px;
 	line-height: 24px;
 }
 .product-box {
 	background-color: #fff;
 	transition: all 0.5s ease;
+	border: 1px solid #f1f1f1;
 }
 .product-box:hover .product-img img {
 	transition: all 0.5s ease;
@@ -423,9 +481,9 @@ a {
 /*Hero*/
 .hero-wrapper {
 	background-size: cover;
-	background-position: center center;
+	background-position: top center;
 	background-repeat: no-repeat;
-	height: 500px;
+	height: 360px;
 }
 .hero-wrapper h2 {
     background-color: rgba(66, 168, 90, 0.7);
@@ -508,13 +566,6 @@ a {
 }
 .single-product .mySwiper3 .swiper-slide img {
 	object-fit: cover;
-}
-.review {
-	text-decoration: underline !important;
-	color: #42a85a;
-}
-.review:hover {
-	color: #f6cc2a;
 }
 .right-product-col p {
 	color: #000;
