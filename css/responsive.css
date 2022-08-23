@@ -49,12 +49,7 @@
 		height: 250px;
 	}
 	.slider-wrapper {
-		height: auto;
-	}
-	.slider-wrapper ul li {
-		width: 33.33%;
-		height: 200px;
-		box-shadow: none;
+		height: 300px;
 	}
 	.img-title a {
 		padding: 5px;
@@ -70,7 +65,7 @@
 	.header-wrapper .navbar-brand {
 		width: 200px;
 	}
-	.slider-wrapper ul li {
-		height: 150px;
+	.slider-wrapper {
+		height: 200px;
 	}
 }
